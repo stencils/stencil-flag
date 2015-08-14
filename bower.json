@@ -5,7 +5,7 @@
     "Joel Drapper <joel@drapper.me>"
   ],
   "description": "Flag Stencil",
-  "main": "flag.styl",
+  "main": "index.styl",
   "keywords": [
     "stencils",
     "stencil",
