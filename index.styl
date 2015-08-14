@@ -1,0 +1,22 @@
+$flag
+	display table
+	width 100%
+
+	&--image, &--body
+		display table-cell
+		vertical-align middle
+
+		[data-flag-align='top'] &
+			vertical-align top
+
+		[data-flag-align='middle'] &
+			vertical-align middle
+
+		[data-flag-align='bottom'] &
+			vertical-align bottom
+
+	&--image
+		padding-right 10px
+
+	&--body
+		width 100%
