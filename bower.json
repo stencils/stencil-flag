@@ -1,0 +1,21 @@
+{
+  "name": "stencil-flag",
+  "homepage": "https://github.com/stencils/stencil-flag",
+  "authors": [
+    "Joel Drapper <joel@drapper.me>"
+  ],
+  "description": "Flag Stencil",
+  "main": "flag.styl",
+  "keywords": [
+    "stencils",
+    "stencil",
+    "flag"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
