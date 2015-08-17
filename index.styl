@@ -1,25 +1,9 @@
 $stencil-flag
-	display table
-	width 100%
+	display flex
+	align-items flex-start
 
-	&--image, &--body
-		display table-cell
-		vertical-align middle
+	&__media
+		margin-right 1em
 
-		[data-flag-align='top'] &
-			vertical-align top
-
-		[data-flag-align='middle'] &
-			vertical-align middle
-
-		[data-flag-align='bottom'] &
-			vertical-align bottom
-
-	&--image
-		margin-right 10px
-
-	&[data-eq-state$='medium']--image
-		margin-right 30px
-
-	&--body
-		width 100%
+	&__body
+		flex 1
