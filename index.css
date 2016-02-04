@@ -1,4 +1,4 @@
-.flag {
+.stencil-flag {
     display: table;
     width: 100%;
 
@@ -7,11 +7,11 @@
       display: table-cell;
       vertical-align: middle;
 
-      @nest .flag--top & {
+      @nest .stencil-flag--top & {
         vertical-align: top;
       }
 
-      @nest .flag--bottom & {
+      @nest .stencil-flag--bottom & {
         vertical-align: bottom;
       }
     }
@@ -27,7 +27,7 @@
       }
     }
 
-    @nest .flag--rev & {
+    @nest .stencil-flag--rev & {
       padding-right: 0;
       padding-left: 1em;
     }
