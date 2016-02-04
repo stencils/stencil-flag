@@ -1,36 +1,39 @@
 .flag {
+    --gutter: 1em;
     display: table;
     width: 100%;
-}
 
-.flag__media,
-.flag__body {
-    display: table-cell;
-    vertical-align: middle;
+    &__media,
+    &__body {
+      display: table-cell;
+      vertical-align: middle;
 
-    .flag--top & {
+      @nest .flag--top & {
         vertical-align: top;
-    }
+      }
 
-    .flag--bottom & {
+      @nest .flag--bottom & {
         vertical-align: bottom;
+      }
     }
-}
 
-.flag__media {
-    padding-right: 1em;
+    &__media {
+      padding-right: 1em;
 
-    img, picture, figure {
+      & img,
+      & picture,
+      & figure {
         display: block;
         max-width: none;
+      }
     }
 
-    .flag--rev & {
-        padding-right: 0;
-        padding-left: 1em;
+    @nest .flag--rev & {
+      padding-right: 0;
+      padding-left: var(--gutter);
     }
-}
 
-.flag__body {
+  &__body {
     width: 100%;
+  }
 }
